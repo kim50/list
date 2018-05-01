@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>list 요소를 활용하여 메뉴바 만들기</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style>
+
+		a:link, a:active, a:visited, a:hover {text-decoration: none;} 
+		a:link, a:active, a:visited, a:hover {color: black;}
+		a:hover{color: white; font-weight: bold; }
+
+		nav{width: 1000px; margin: auto; height: 44px; }
+		nav #logo{width: 300px; height: 44px; float: left; }
+		nav #logo a{display: block; text-align: center; line-height: 44px;}
+		nav #logo a:hover {color: black; background: blue;}
+		nav #menuList{ float: right; margin: 0; padding: 0;}
+		nav #menuList .main-menu-item{list-style: none; float: left; width: 150px; height: 44px;}
+		nav #menuList a{display: block; height: 44px; text-align: center; line-height: 44px;}
+		nav #menuList a:hover {color: black; background: green;}
+	</style>
+</head>
+<body>
+	<nav>
+		<div id="logo">
+			<a href="index.html">listExample</a>
+		</div>
+		<ul id="menuList">
+			<li class="main-menu-item">
+				<a href="http://naver.com" target="_blank">naver</a>
+			</li>
+			<li class="main-menu-item">
+				<a href="http://daum.net" target="_blank">daum</a>
+			</li>
+			<li class="main-menu-item">
+				<a href="http://facebook.com" target="_blank">facebook</a>
+			</li>
+			<li class="main-menu-item">
+				<a href="http://twitter.com" target="_blank">twitter</a>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>
